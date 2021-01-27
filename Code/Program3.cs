@@ -1,0 +1,27 @@
+﻿using System;
+
+namespace Task3
+{
+    class Program3
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Составить алгоритм: на входе есть числовой массив, необходимо вывести элементы массива кратные 3");
+            var data = new int[] { 3, 5, 12, 61, 94, 99 };
+            Console.WriteLine("Input data:");
+            foreach (int i in data)
+            {
+                Console.Write(i +" ");
+            }
+            Console.WriteLine("\n Result:");
+            foreach (int i in data)
+            {
+                if ((i % 3) == 0)
+                {
+                    Console.Write(i + " ");
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
